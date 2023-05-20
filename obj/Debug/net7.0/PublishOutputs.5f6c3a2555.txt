@@ -1,0 +1,7 @@
+c:\Users\lenovo\Desktop\PublishOutput\PublishOutput\Dammon.exe
+c:\Users\lenovo\Desktop\PublishOutput\PublishOutput\appsettings.Development.json
+c:\Users\lenovo\Desktop\PublishOutput\PublishOutput\appsettings.json
+c:\Users\lenovo\Desktop\PublishOutput\PublishOutput\Dammon.dll
+c:\Users\lenovo\Desktop\PublishOutput\PublishOutput\Dammon.deps.json
+c:\Users\lenovo\Desktop\PublishOutput\PublishOutput\Dammon.runtimeconfig.json
+c:\Users\lenovo\Desktop\PublishOutput\PublishOutput\Dammon.pdb

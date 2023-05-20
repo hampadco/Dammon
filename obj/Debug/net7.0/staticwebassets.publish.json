@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "Hash": "rKFGvSBtrDUMk/l0cY4N0ZWRvNPEfz+W1Tn4SdMKStc=",
+  "Hash": "eMeJmtKNyqcVqIFqYIYHLjMGj6ImzhvoxbNvwHRIklc=",
   "Source": "Dammon",
   "BasePath": "_content/Dammon",
   "Mode": "Default",
-  "ManifestType": "Build",
+  "ManifestType": "Publish",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
