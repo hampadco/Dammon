@@ -1,5 +1,22 @@
 
-
+<style>
+  td,tr{
+   
+    border:0.5px solid  rgb(211, 204, 204);
+    white-space: nowrap;
+    text-align: center;
+    }
+    tr:hover{
+      background-color: yellowgreen;
+      color: white;
+      
+    }
+    .selected {
+       background-color: yellowgreen;
+      color: white;
+    }
+       
+</style>
 <div class="card p-5">
 
   <div class="row alert alert-primary">
@@ -35,14 +52,13 @@
     <div class="col-12 card mt-1">
 
                    <div class="card-body">
-                      <div class="">
-                        <button type="button" class="btn btn-outline-primary">اولیه</button>
-                        <button type="button" class="btn btn-outline-secondary">ثانویه</button>
-                        <button type="button" class="btn btn-outline-success">موفقیت</button>
-                        <button type="button" class="btn btn-outline-danger">اخطار</button>
-                        <button type="button" class="btn btn-outline-warning">هشدار</button>
-                        <button type="button" class="btn btn-outline-info">اطلاعات</button>
-                        <button type="button" class="btn btn-outline-dark">تیره</button>
+                      <div class=" text-center">
+                        <button type="button" class="btn btn-outline-success">اضافه</button>
+                        <button type="button" class="btn btn-outline-danger">حذف</button>
+                        <button type="button" class="btn btn-outline-primary">اصلاح</button>
+                        <button type="button" class="btn btn-outline-warning">نمایش</button>
+                        <button type="button" class="btn btn-outline-secondary">چاپ</button>
+                        <button type="button" class="btn btn-outline-info">سند حسابداری</button>
                       </div>
                     </div>
 
@@ -50,6 +66,98 @@
 
 
 
+     <div class="col-12 card mt-1   " style="overflow-x: scroll;">
+                        <div class="row justify-content-center text-center">
+                          <div class="col-4 mt-3  ">
+                          <div class="input-group">
+                          <input type="text" class="form-control" placeholder="برای جستجو متن رو وارد کنید ..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                          <button class="btn btn-outline-primary" type="button" id="button-addon2">جستوجو</button>
+                          </div>
+                       </div>
+
+                        </div>
+                       
+
+                   <div class="card-body" >
+                       
+                     <table class="table table-bordered " id="myTable">
+
+                              <tr style="background-color: whitesmoke;">
+                                <th>ردیف</th>
+                                <th>شماره</th>
+                                <th>تاریخ</th>
+                                <th>مرکز هزینه</th>
+                                <th>طرف حساب</th>
+                                <th>تعداد اقلام</th>
+                                <th>مبلغ</th>
+                                <th>سند حسابداری</th>
+                               <th>ثبت انبار</th>
+                               <th>ثبت حسابداری</th>
+                               <th>کاربر</th>
+                               
+                              </tr>
+
+
+                              <tr>
+                                <td>1</td>
+                                <td>52365</td>
+                                <td>1402/02/30</td>
+                                <td>نیاوران</td>
+                                <td>علی امیری</td>
+                                <td>52</td>
+                                <td>520000</td>
+                                <td>4523</td>
+                                <td>انجام شد </td>
+                                <td>5260</td>
+                                <td>رسول قاسمی</td>
+                              </tr>
+
+                                 <tr>
+                                <td>2</td>
+                                <td>52365</td>
+                                <td>1402/02/30</td>
+                                <td>نیاوران شهرک ولیعصر تهران </td>
+                                <td>علی امیری</td>
+                                <td>52</td>
+                                <td>520000</td>
+                                <td>4523</td>
+                                <td>انجام شد </td>
+                                <td>5260</td>
+                                <td>رسول قاسمی</td>
+                              </tr>
+
+
+
+                            </table>
+
+
+
+                        
+                    </div>
+      </div>
+
+
+
+
   </div>
 
 </div>
+
+
+<script>
+    // Get all table rows
+    const rows = document.querySelectorAll("#myTable tr");
+
+    // Add click event listener to each row
+    rows.forEach(row => {
+      row.addEventListener("click", function() {
+        // Remove the 'selected' class from all rows
+        rows.forEach(row => {
+          row.classList.remove("selected");
+        });
+
+        // Add the 'selected' class to the clicked row
+        this.classList.add("selected");
+      });
+    });
+  </script>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\my proge\\Dammon\\Dammon.csproj": {}
+    "D:\\my proge\\Dammon\\Dammon.csproj": {}
   },
   "projects": {
-    "d:\\my proge\\Dammon\\Dammon.csproj": {
+    "D:\\my proge\\Dammon\\Dammon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\my proge\\Dammon\\Dammon.csproj",
+        "projectUniqueName": "D:\\my proge\\Dammon\\Dammon.csproj",
         "projectName": "Dammon",
-        "projectPath": "d:\\my proge\\Dammon\\Dammon.csproj",
+        "projectPath": "D:\\my proge\\Dammon\\Dammon.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "d:\\my proge\\Dammon\\obj\\",
+        "outputPath": "D:\\my proge\\Dammon\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config"
