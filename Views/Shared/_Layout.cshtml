@@ -31,6 +31,12 @@
     <link rel="stylesheet" href="../../assets/vendor/libs/tagify/tagify.css">
     <link rel="stylesheet" href="../../assets/vendor/libs/flatpickr/flatpickr.css">
     <link rel="stylesheet" href="../../assets/vendor/libs/formvalidation/dist/css/formValidation.min.css">
+    @* picker *@
+       <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../../assets/vendor/libs/bootstrap-datepicker/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../../assets/vendor/libs/bootstrap-daterangepicker/bootstrap-daterangepicker.css">
+    <link rel="stylesheet" href="../../assets/vendor/libs/jquery-timepicker/jquery-timepicker.css">
+    <link rel="stylesheet" href="../../assets/vendor/libs/pickr/pickr-themes.css">
 
     <!-- Page CSS -->
 
@@ -56,6 +62,25 @@
       option{
         font-weight: bolder;
       }
+      hr{
+        border-top: 1px solid green !important;
+      }
+
+      .form-select,input{
+        border: 1px solid rgb(62, 62, 64) !important;
+      }
+     
+
+  td > select{
+  min-width: 100px !important;
+}
+
+td,tr{
+  padding: 2px !important;
+}
+th{
+  font-size: 15px !important;
+}
       
     </style>
   </head>
@@ -182,7 +207,7 @@
                       <div class="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="auth-login-cover.html" target="_blank">
+                      <a class="dropdown-item" href="auth-login-cover.html" >
                         <i class="bx bx-power-off me-2"></i>
                         <span class="align-middle">خروج</span>
                       </a>
@@ -225,26 +250,32 @@
                     </a>
 
                     <ul class="menu-sub">
-                      <li class="menu-item">
-                        <a href="" class="menu-link">
-                        <i class='menu-icon tf-icons bx bxs-food-menu'></i>
-                          <div>معرفی حساب کل</div>
-                        </a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="" class="menu-link" target="_blank">
+
+                       <li class="menu-item">
+                        <a href="/hesabha/Group" class="menu-link" >
                            <i class='menu-icon tf-icons bx bx-category-alt'></i>
                           <div >معرفی گروه حساب</div>
                         </a>
                       </li>
+
+
+
+
                       <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="/hesabha/kol" class="menu-link">
+                        <i class='menu-icon tf-icons bx bxs-food-menu'></i>
+                          <div>معرفی حساب کل</div>
+                        </a>
+                      </li>
+                     
+                      <li class="menu-item">
+                        <a href="/hesabha/moin" class="menu-link">
                          <i class='menu-icon tf-icons bx bxs-receipt'></i>
                           <div >معرفی حساب های معین</div>
                         </a>
                       </li>
                       <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="/hesabha/tafsili" class="menu-link">
                          <i class='menu-icon tf-icons bx bx-spreadsheet'></i>
                           <div>معرفی حساب های تفصیلی</div>
                         </a>
@@ -345,7 +376,7 @@
                     <ul class="menu-sub">
                     
                       <li class="menu-item">
-                        <a href="/home/offline" class="menu-link">
+                        <a href="/sale/index" class="menu-link">
                         
                           <i class='menu-icon tf-icons bx bx-receipt'></i>
                           <div> پیش فاکتور  </div>
@@ -623,13 +654,13 @@
                     <ul class="menu-sub">
                     
                       <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="/personel/add" class="menu-link">
                           <i class='menu-icon tf-icons bx bxs-user-detail'></i>
                           <div > لیست پرسنل</div>
                         </a>
                       </li>
                        <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="/tamin/add" class="menu-link">
                         
                           <i class='menu-icon tf-icons bx bxs-user-account'></i>
                           <div style="white-space: nowrap;" > تامین کنندگان و فروشندگان </div>
@@ -637,7 +668,7 @@
                       </li>
                       
                       <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="/moshtarian/add" class="menu-link">
                         
                           <i class='menu-icon tf-icons bx bx-user-check'></i>
                           <div style="white-space: nowrap;" >مشتریان و طرف حساب ها </div>
@@ -646,7 +677,7 @@
 
                          
                       <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="/bank/add" class="menu-link">
                         
                           <i class='menu-icon tf-icons bx bxs-bank'></i>
                           <div style="white-space: nowrap;" >لیست بانک ها</div>
@@ -655,7 +686,7 @@
 
                          
                       <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="/marakez/add" class="menu-link">
                         
                           <i class='menu-icon tf-icons bx bx-building'></i>
                           <div style="white-space: nowrap;" >  مراکز هزینه   </div>
@@ -726,6 +757,18 @@
 
     <!-- Page JS -->
     <script src="../../assets/js/dashboards-ecommerce.js"></script>
+     @* date picker *@
+        <!-- Vendors JS -->
+    <script src="../../assets/vendor/libs/moment/moment.js"></script>
+    <script src="../../assets/vendor/libs/jdate/jdate.js"></script>
+    <script src="../../assets/vendor/libs/flatpickr/flatpickr-jdate.js"></script>
+    <script src="../../assets/vendor/libs/flatpickr/l10n/fa-jdate.js"></script>
+    <script src="../../assets/vendor/libs/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+    <script src="../../assets/vendor/libs/bootstrap-daterangepicker/bootstrap-daterangepicker.js"></script>
+    <script src="../../assets/vendor/libs/jquery-timepicker/jquery-timepicker.js"></script>
+    <script src="../../assets/vendor/libs/pickr/pickr.js"></script>
+      <!-- Page JS -->
+    <script src="../../assets/js/forms-pickers.js"></script>
 
 
      <!-- date shamsi -->

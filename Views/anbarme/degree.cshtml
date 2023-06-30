@@ -1,0 +1,217 @@
+@model degree
+
+<style>
+    td,
+    tr {
+
+        border: 0.5px solid rgb(0, 0, 0);
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    tr:hover {
+        background-color: rgb(188, 189, 182);
+        color: rgb(1, 1, 1);
+
+    }
+
+    .selected {
+        background-color: rgb(170, 173, 163);
+        color: rgb(2, 2, 2);
+    }
+
+    .row>* {
+
+        padding-right: 0 !important;
+        padding-left: 2px !important;
+
+    }
+</style>
+
+
+<div class="card p-3" style="zoom: 90%;">
+
+
+    <div class="row p-3">
+        
+
+            <div class=" ">
+
+         <form action="/anbarme/adddegree" method="post">
+         
+                <div class="row alert alert-primary p-3 ">
+                    <p class="text-center alert alert-success fs-large text-black"> ثبت  درجه </p>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12 "
+                        style="padding-left: 20px  !important;padding-right: 20px  !important;">
+
+
+
+
+
+                        <div class="row">
+
+                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                <label class="p-1 text-center "> عنوان : </label>
+                            </div>
+
+
+
+                            <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-12">
+                                <input asp-for="Name" required type="text" class="form-control">
+
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12  "
+                        style="padding-left: 20px  !important;padding-right: 20px  !important;">
+
+
+
+
+                        @* 3*@
+
+
+                        <div class="row">
+
+                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                <label class="p-1 text-center "> توضیحات: </label>
+                            </div>
+
+
+
+                            <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-12">
+                                <input asp-for="type" required type="text" class="form-control">
+
+                            </div>
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                   
+
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12 text-center ">
+
+                    <button type="submit" class="btn btn-warning form-control" >ثبت</button>
+
+
+                </div>
+
+
+
+                </div>
+
+                
+
+
+
+                <div class="col-12 card mt-5   " style="overflow-x: scroll;">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-3 mt-3  ">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="برای جستجو متن رو وارد کنید ..."
+                                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <button class="btn btn-primary" type="button" id="button-addon2">جستوجو</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+           </form>
+
+
+        <div class="card-body ">
+
+            <table class="table table-bordered " id="myTable">
+
+                <tr style="background-color: whitesmoke;">
+                    <th>ردیف</th>
+                    <th>عنوان درجه</th>
+                    <th>  توضیحات درجه  </th>
+                   
+                    <th>عملیات</th>
+                   
+
+                </tr>
+
+               
+                    @{int i=1;}
+                         
+                    @foreach (var item in ViewBag.degree)
+                    {
+                        <tr>
+                        <td>@i</td>
+                        <td>@item.Name</td>
+                         <td>@item.type</td>
+                          
+                             <td>
+                        <a href="/anbarme/deletedegree/@item.Id" class="btn btn-danger form-control"
+                            onclick="return confirm('آیا از حذف مطمن هستید؟')">حذف </a>
+
+                            </td>
+
+
+                             </tr>
+                        i++;
+
+
+                    }
+                   
+                  
+
+
+
+               
+
+
+            </table>
+
+        </div>
+    </div>
+
+
+
+</div>
+
+</div>
+
+<script>
+    // Get all table rows
+    const rows = document.querySelectorAll("#myTable tr");
+
+    // Add click event listener to each row
+    rows.forEach(row => {
+        row.addEventListener("click", function () {
+            // Remove the 'selected' class from all rows
+            rows.forEach(row => {
+                row.classList.remove("selected");
+            });
+
+            // Add the 'selected' class to the clicked row
+            this.classList.add("selected");
+        });
+    });
+</script>

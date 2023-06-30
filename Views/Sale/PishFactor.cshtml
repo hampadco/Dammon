@@ -1,0 +1,673 @@
+
+<style>
+  td,tr{
+
+    border:0.5px solid  rgb(0, 0, 0);
+    white-space: nowrap;
+    text-align: center;
+    
+    }
+    tr:hover{
+      background-color: rgb(188, 189, 182);
+      color: rgb(1, 1, 1);
+
+    }
+    .selected {
+       background-color: rgb(170, 173, 163);
+      color: rgb(2, 2, 2);
+    }
+     .row > * {
+   
+    padding-right: 0 !important;
+    padding-left: 2px !important;
+   
+}
+
+</style>
+
+
+<div class="card p-3" style="zoom: 90%;">
+    
+
+    <div class="row p-3">
+       
+
+        <div class=" ">
+            <div class="row alert alert-primary p-3 ">
+                <p class="text-center">پیش فاکتور</p>
+
+                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12 " style="padding-left: 20px  !important;padding-right: 20px  !important;"  >
+
+                     
+                                   <div class="row">
+
+                                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                                <label  class="p-1 text-center "> حساب کـل :   </label>
+                                            </div>
+
+                                            <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-12">
+                                                
+                                                <select class="form-select text-center " asp-items="ViewBag.GroupId" >
+                                                
+                                                    
+                                                </select>
+                                                
+
+                                            </div>
+
+                                           
+
+                                                    
+                                    </div>
+
+
+                            @* 2 *@
+                            
+
+                                    <div class="row">
+
+                                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                            <label  class="p-1 text-center "> حساب معین :   </label>
+                                        </div>
+
+                                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                            
+                                            <select class="form-select text-center" >
+                                            
+                                                <option value="">1111</option>
+                                                <option value="">2222</option>
+                                            </select>
+                                            
+
+                                        </div>
+
+                                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12">
+                                            <input type="text" value="هزینه های جاری " disabled class="form-control">
+                                        
+                                        </div>
+
+                                        
+
+                                    </div>
+                            
+                                    
+                                    
+                            
+
+                            @* 3*@
+                            
+
+                                    <div class="row" >
+
+                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                        <label  class="p-1 text-center "> تفضیلی :   </label>
+                                    </div>
+
+                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                        
+                                        <select class="form-select text-center" >
+                                        
+                                            <option value="">1111</option>
+                                            <option value="">2222</option>
+                                        </select>
+                                        
+
+                                    </div>
+
+                                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-9">
+                                      
+                                        <select class="form-select text-center" >
+                                        
+                                            <option value="">....</option>
+                                            <option value="">علی امیری</option>
+                                        </select>
+                                    
+                                    </div>
+                                    <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-3" style="border: 1px solid black; border-radius: 5px;text-align: center;font-size: 20px; ">
+                                    <a href="" class="">+</a>
+                                    
+                                    </div>
+
+                                    
+
+                                    </div>
+
+                             @* 4*@
+                            
+
+                                    <div class="row" >
+
+                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                        <label  class="p-1 text-center "> هماهنگ کننده :   </label>
+                                    </div>
+
+                                    
+
+                                    <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-12">
+                                        <input type="text"   class="form-control">
+                                    
+                                    </div>
+                                    
+
+                                    
+
+                                    </div>
+
+                              @*5*@
+                            
+
+                                    <div class="row" >
+
+                                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                            <label  class="p-1 text-center "> ملاحظات:   </label>
+                                        </div>
+
+                                        
+
+                                        <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-12">
+                                            <input type="text"   class="form-control">
+                                        
+                                        </div>
+                                    
+
+                                    
+
+                                    </div>        
+                            
+                 </div>
+
+                   <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12  " style="padding-left: 20px  !important;padding-right: 20px  !important;"  >
+
+
+
+
+                                       @* 4*@
+                            
+
+                                    <div class="row" >
+
+                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                        <label  class="p-1 text-center "> شماره سریال:   </label>
+                                    </div>
+
+                                    
+
+                                    <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-12">
+                                        <input type="text"   class="form-control">
+                                    
+                                    </div>
+                                    
+
+                                    
+
+                                    </div>
+
+                              @*5*@
+                            
+
+                                    @* date *@
+                                        <div class="row" >
+
+                                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                                <label  class="p-1 text-center "> تاریخ سفارش:   </label>
+                                            </div>
+
+                                            
+
+                                            <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-12">
+                                            <input type="text" class="form-control" placeholder="YYYY/MM/DD" id="flatpickr-date">
+                                            
+                                            </div>
+                                    
+
+                                    
+
+                                    </div>   
+
+
+
+
+
+
+
+
+                     
+                                   @* date2 *@
+                                        <div class="row" >
+
+                                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                                <label  class="p-1 text-center "> تاریخ تحویل:   </label>
+                                            </div>
+
+                                            
+
+                                            <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-12">
+                                            <input type="text" class="form-control" placeholder="YYYY/MM/DD - HH:MM" id="flatpickr-datetime">
+                                            
+                                            </div>
+                                    
+
+                                    
+
+                                    </div>   
+
+
+                            @* 2 *@
+                            
+
+                                    <div class="row">
+
+                                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                            <label  class="p-1 text-center "> پروژه:   </label>
+                                        </div>
+
+                                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                            
+                                            <select class="form-select text-center" >
+                                            
+                                                <option value="">1111</option>
+                                                <option value="">2222</option>
+                                            </select>
+                                            
+
+                                        </div>
+
+                                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12">
+                                            
+                                        <select class="form-select text-center"  >
+                                        
+                                            <option value="">...</option>
+                                            <option value="">پروژه قیطریه</option>
+                                        </select>
+                                        
+                                        </div>
+
+                                        
+
+                                    </div>
+                            
+                                    
+                                    
+                            
+
+                            @* 3*@
+                            
+
+                                    <div class="row" >
+
+                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                        <label  class="p-1 text-center "> مرکز هزینه :   </label>
+                                    </div>
+
+                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                        
+                                        <select class="form-select text-center" >
+                                        
+                                            <option value="">...</option>
+                                            <option value="">10001 </option>
+                                        </select>
+                                        
+
+                                    </div>
+
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12">
+                                        <input type="text" value="انبار لواسان" disabled class="form-control">
+                                    
+                                    </div>
+                                    
+
+                                    
+
+                                    </div>
+
+                            
+                            
+                   </div>
+
+                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12  " style="padding-left: 20px  !important;padding-right: 20px  !important;"  >
+
+
+
+
+                                       @* 4*@
+                            
+
+                                    <div class="row" >
+
+                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                        <label  class="p-1 text-center ">  صادر کننده:   </label>
+                                    </div>
+
+                                    
+
+                                    <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-12">
+                                        <input type="text"   class="form-control">
+                                    
+                                    </div>
+                                    
+
+                                    
+
+                                    </div>
+
+                              @*5*@
+                            
+
+                                    @* date *@
+                                        <div class="row" >
+
+                                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                                <label  class="p-1 text-center ">  بررسی کننده:   </label>
+                                            </div>
+
+                                            
+
+                                            <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-12">
+                                            <input type="text" class="form-control" >
+                                            
+                                            </div>
+                                    
+
+                                    
+
+                                    </div>   
+
+
+
+
+
+
+
+
+                     
+                                   @* date2 *@
+                                        <div class="row" >
+
+                                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                                <label  class="p-1 text-center ">  تایید کننده:   </label>
+                                            </div>
+
+                                            
+
+                                            <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-12">
+                                            <input type="text" class="form-control">
+                                            
+                                            </div>
+                                    
+
+                                    
+
+                                    </div>   
+
+
+                            @* 2 *@
+                            
+
+                                    <div class="row">
+
+                                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                            <label  class="p-1 text-center "> نوع فاکتور:   </label>
+                                        </div>
+
+                                        <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-12">
+                                            
+                                            <select class="form-select text-center" >
+                                            
+                                                <option value="">بررسی</option>
+                                                <option value="">تایید</option>
+                                            </select>
+                                            
+
+                                        </div>
+
+                                        
+                                        
+
+                                    </div>
+                            
+                                    
+                                    
+                            
+
+                            @* 3*@
+
+
+                            
+                            
+
+                                    <div class="row">
+
+                                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12">
+                                            <label  class="p-1 text-center "> محاسبه ابزار :   </label>
+                                        </div>
+
+                                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-6">
+                                            
+                                            <select class="form-select text-center" >
+                                                <option value=""> نوع طول</option>
+                                            
+                                                <option value=""> یک بدن </option>
+                                                <option value="">دو بدن </option>
+                                            </select>
+                                            
+
+                                        </div>
+                                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-6">
+                                            
+                                            <select class="form-select text-center" >
+                                                <option value=""> نوع عرض</option>
+                                            
+                                                <option value="">  یه کله </option>
+                                                <option value="">دو کله  </option>
+                                            </select>
+                                            
+
+                                        </div>
+                                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-6">
+                                            
+                                            <select class="form-select text-center" >
+                                                <option value="">  کد ابزار</option>
+                                            
+                                                <option value=""> ....</option>
+                                                <option value="">10000 </option>
+                                            </select>
+                                            
+
+                                        </div>
+
+
+                                        
+                                        
+
+                                    </div>
+                            
+                            
+
+                                   
+
+                            
+                            
+                   </div>
+
+
+            
+
+                
+        </div>
+
+       
+
+        <div class="col-12 card mt-1   " style="overflow-x: scroll;">
+            @* <div class="row justify-content-center text-center">
+                <div class="col-4 mt-3  ">
+                    <div class="input-group">
+                        <input type="text" class="form-control"
+                            placeholder="برای جستجو متن رو وارد کنید ..."
+                            aria-label="Recipient's username"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-primary" type="button"
+                            id="button-addon2">جستوجو</button>
+                    </div>
+                </div>
+
+            </div> *@
+
+            <div class="card-body">
+
+                <table class="table table-bordered " id="myTable">
+
+                    <tr style="background-color: whitesmoke;">
+                        <th>ردیف</th>
+                        <th>کد انبار <a href="/anbarme/anbar">+</a></th>
+                        <th>ردیف انبار <a href="/anbarme/radif">+</a></th>
+                        <th> نحوه برش <a href="/anbarme/boresh">+</a></th>
+                        <th> محاسبه مبلغ <a href="/anbarme/mablagh">+</a></th>
+                        <th> گروه سنگ <a href="/anbarme/groh">+</a></th>
+                        <th>کد سنگ | ابزار <a href="/anbarme/sangabzar">+</a></th>
+                        <th>شرح سنگ ابزار <a href="/anbarme/dessang">+</a></th>
+                        <th> درجه<a href="/anbarme/degree">+</a></th>
+                        <th>کیفیت <a href="/anbarme/quality">+</a></th>
+                        <th>ضخامت(cm)</th>
+                        <th>طول</th>
+                        <th>عرض</th>
+                        <th>تعداد</th>
+                        <th>متراژ(m2)</th>
+                        <th>بهای واحد</th>
+                        <th>مبلغ کل</th>
+                        <th>عملیات</th>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                           1
+                        </td>
+                        <td>
+                            <select  class="form-select">
+                                <option value="">...</option>
+                                <option value="">1</option>
+                            </select>
+                             
+                        </td>
+                        <td>
+                            <select  class="form-select">
+                                <option value="">...</option>
+                                <option value="">10000yyyy</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select  class="form-select">
+                                <option value="">...</option>
+                                <option value="">1</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select  class="form-select">
+                                <option value="">...</option>
+                                <option value="">1</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select  class="form-select">
+                                <option value="">...</option>
+                                <option value="">1</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select  class="form-select">
+                                <option value="">...</option>
+                                <option value="">1</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select  class="form-select">
+                                <option value="">...</option>
+                                <option value="">1</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select  class="form-select">
+                                <option value="">...</option>
+                                <option value="">1</option>
+                            </select>
+                        </td>
+                         <td>
+                            <select  class="form-select"   >
+                               
+                               
+                            </select>
+                        </td>
+
+
+                       
+                         <td>
+                            <input type="text" class="form-control">
+                        </td>
+                         <td>
+                            <input type="text" class="form-control">
+                        </td>
+                         <td>
+                            <input type="text" class="form-control">
+                        </td>
+                         <td>
+                            <input type="text" class="form-control">
+                        </td>
+                         <td>
+                            <input type="text" class="form-control">
+                        </td>
+                         <td>
+                            <input type="text" class="form-control">
+                        </td>
+                            <td>
+                                <input type="text" class="form-control">
+                            </td>
+                             <td>
+                               <button type="button" class="btn btn-success">اضافه</button>
+                            </td>
+
+
+                    </tr>
+
+                   
+                </table>
+
+            </div>
+        </div>
+
+         <div class="col-12 card mt-1">
+
+            <div class="card-body">
+                <div class=" text-center">
+                    
+                    <button type="button" class="btn btn-danger">حذف</button>
+                    <button type="button" class="btn btn-primary">اصلاح</button>
+                    <button type="button" class="btn btn-warning">نمایش</button>
+                    <button type="button" class="btn btn-secondary">چاپ</button>
+                    <button type="button" class="btn btn-info">سند
+                        حسابداری</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    // Get all table rows
+    const rows = document.querySelectorAll("#myTable tr");
+
+    // Add click event listener to each row
+    rows.forEach(row => {
+      row.addEventListener("click", function() {
+        // Remove the 'selected' class from all rows
+        rows.forEach(row => {
+          row.classList.remove("selected");
+        });
+
+        // Add the 'selected' class to the clicked row
+        this.classList.add("selected");
+      });
+    });
+  </script>

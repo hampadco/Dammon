@@ -9,49 +9,137 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Dammon
 build_property.RootNamespace = Dammon
-build_property.ProjectDir = D:\my proge\Dammon\
+build_property.ProjectDir = C:\Users\Apple\Desktop\damoonn\Dammon\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\my proge\Dammon
+build_property.MSBuildProjectDirectory = C:\Users\Apple\Desktop\damoonn\Dammon
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/my proge/Dammon/Views/Home/Index.cshtml]
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/anbarme/anbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYW5iYXJtZVxhbmJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/anbarme/boresh.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYW5iYXJtZVxib3Jlc2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/anbarme/codesa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYW5iYXJtZVxjb2Rlc2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/anbarme/degree.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYW5iYXJtZVxkZWdyZWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/anbarme/dessang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYW5iYXJtZVxkZXNzYW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/anbarme/groh.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYW5iYXJtZVxncm9oLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/anbarme/mablagh.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYW5iYXJtZVxtYWJsYWdoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/anbarme/quality.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYW5iYXJtZVxxdWFsaXR5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/anbarme/radif.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYW5iYXJtZVxyYWRpZi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/anbarme/sangabzar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYW5iYXJtZVxzYW5nYWJ6YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/Bank/add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua1xhZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/HesabHa/Group.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYWJIYVxHcm91cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/HesabHa/Kol.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYWJIYVxLb2wuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/HesabHa/moin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYWJIYVxtb2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/HesabHa/review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYWJIYVxyZXZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/HesabHa/Tafsili.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVzYWJIYVxUYWZzaWxpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/my proge/Dammon/Views/Home/offline.cshtml]
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/Home/offline.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxvZmZsaW5lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/my proge/Dammon/Views/Home/Privacy.cshtml]
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/my proge/Dammon/Views/Login/index.cshtml]
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/Login/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5caW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/my proge/Dammon/Views/Sale/index.cshtml]
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/marakez/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbWFyYWtlelxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/Moshtarian/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9zaHRhcmlhblxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/Personel/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/Sale/ActKoll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZVxBY3RLb2xsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/Sale/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZVxpbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/my proge/Dammon/Views/Shared/Error.cshtml]
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/Sale/PishFactor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZVxQaXNoRmFjdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/my proge/Dammon/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/my proge/Dammon/Views/_ViewImports.cshtml]
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/Tamin/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFtaW5cQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/my proge/Dammon/Views/_ViewStart.cshtml]
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/my proge/Dammon/Views/Shared/_Layout.cshtml]
+[C:/Users/Apple/Desktop/damoonn/Dammon/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-cq5u3v9ut9

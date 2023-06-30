@@ -1,15 +1,25 @@
+using System.Data;
+using Microsoft.Data.SqlClient;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//adddbcontext
+
+builder.Services.AddDbContext<Context>();
+
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
            if (app.Environment.IsDevelopment())
             {
-                 //app.UseDeveloperExceptionPage();
-                 app.UseExceptionHandler("/Home/offline");
+                 app.UseDeveloperExceptionPage();
+                 //app.UseExceptionHandler("/Home/offline");
                 
             }
             else
@@ -21,6 +31,8 @@ var app = builder.Build();
             }
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+//dappper
+
 
 app.UseRouting();
 

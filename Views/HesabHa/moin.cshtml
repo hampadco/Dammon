@@ -1,0 +1,339 @@
+
+@model Moin;
+<style>
+    td,
+    tr {
+
+        border: 0.5px solid rgb(0, 0, 0);
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    tr:hover {
+        background-color: rgb(188, 189, 182);
+        color: rgb(1, 1, 1);
+
+    }
+
+    .selected {
+        background-color: rgb(170, 174, 164);
+        color: rgb(2, 2, 2);
+    }
+
+    .row>* {
+
+        padding-right: 0 !important;
+        padding-left: 2px !important;
+
+    }
+</style>
+
+
+<div class="card p-4" style="zoom: 90%;">
+
+
+    <div class="row p-4">
+<form action="/hesabha/moin" method="post">
+
+        <div class=" ">
+            <div class="row alert alert-primary p-4 ">
+                <p class="text-center alert alert-success fs-large text-black">معرفی حساب های معین</p>
+
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12 "
+                    style="padding-left: 20px  !important;padding-right: 20px  !important;">
+
+
+
+
+
+                    <div class="row">
+
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12">
+                            <label class="p-1 text-center ">  کد کل: </label>
+                        </div>
+
+
+
+                        <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-12">
+
+                            <select asp-for="CodeKol" required asp-items="ViewBag.KolId" class="form-select text-center">
+
+                                <option value=""> </option>
+
+                            </select>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12  "
+                    style="padding-left: 20px  !important;padding-right: 20px  !important;">
+
+
+
+
+                    @* 4*@
+
+
+                    <div class="row">
+
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12">
+                            <label class="p-1 text-center "> کد حساب : </label>
+                        </div>
+
+
+
+                        <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-12">
+                            <input required asp-for="CodeHesab" type="number" class="form-control">
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12  "
+                    style="padding-left: 20px  !important;padding-right: 20px  !important;">
+
+
+
+
+                    @* 4*@
+
+
+                    <div class="row">
+
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12">
+                            <label class="p-1 text-center "> عنوان حساب : </label>
+                        </div>
+
+
+
+                        <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-12">
+                            <input required asp-for="Titile" type="text" class="form-control">
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+            
+
+
+
+
+
+
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12  "
+                    style="padding-left: 20px  !important;padding-right: 20px  !important;">
+
+
+
+                    <div class="row">
+
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12">
+                            <label class="p-1 text-center "> تعریف حساب: </label>
+                        </div>
+
+                        <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-12">
+
+                            <input required asp-for="TypeHesab" type="text" class="form-control">
+
+
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12  "
+                style="padding-left: 20px  !important;padding-right: 20px  !important;">
+
+
+
+                <div class="row">
+
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12">
+                        <label class="p-1 text-center "> ماهیت حساب: </label>
+                    </div>
+
+                    <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-12">
+
+                        <select required asp-for="Mahyat" class="form-select text-center">
+
+                            <option value="بدهکار">بدهکار</option>
+                            <option value="بستانکار">بستانکار</option>
+                            <option value="مهم نیست">مهم نیست</option>
+                        </select>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+               
+
+
+            </div>
+
+
+
+    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12  ">
+
+
+                    <button type="submit" class="btn btn-warning " style="width:75%;margin-top: 35px;">ثبت</button>
+
+
+                </div>
+               
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+</form>
+
+
+
+
+
+
+
+
+
+        <div class="col-12 card mt-5   " style="overflow-x: scroll;">
+            <div class="row justify-content-center text-center">
+                <div class="col-4 mt-4  ">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="برای جستجو متن رو وارد کنید ..."
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-primary" type="button" id="button-addon2">جستوجو</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="card-body ">
+
+                <table class="table table-bordered " id="myTable">
+
+                    <tr style="background-color: whitesmoke;">
+                        <th>ردیف</th>
+                        <th>کد کل</th>
+                        <th>کد حساب</th>
+                        <th>عنوان حساب  </th>
+                       <th>تعریف حساب</th>
+                        <th>ماهیت حساب </th>
+                        
+                        <th>عملیات</th>
+
+                    </tr>
+
+                  
+
+                        @{int i=1;}
+
+                        @foreach (var item in  ViewBag.Moin)
+                        { 
+                             <tr>
+                            <td>@i</td>
+                            <td>@item.CodeKol</td>
+                            <td>@item.CodeHesab</td>
+                            <td>@item.Titile</td>
+                            <td>@item.TypeHesab</td>
+                            <td>@item.Mahyat</td>
+                            @* delete *@
+                            <td>
+                                <a onclick="return confirm('آیا از حذف مطمئن هستید؟')"  href="/hesabha/deletemoin/@item.Id" class="btn btn-danger form-control">حذف</a>
+                            </td>
+                           
+                        
+                            </tr>
+                            i++;
+                       
+                            
+                        }
+                        
+
+
+
+                  
+
+
+                </table>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+</div>
+
+<script>
+    // Get all table rows
+    const rows = document.querySelectorAll("#myTable tr");
+
+    // Add click event listener to each row
+    rows.forEach(row => {
+        row.addEventListener("click", function () {
+            // Remove the 'selected' class from all rows
+            rows.forEach(row => {
+                row.classList.remove("selected");
+            });
+
+            // Add the 'selected' class to the clicked row
+            this.classList.add("selected");
+        });
+    });
+</script>
